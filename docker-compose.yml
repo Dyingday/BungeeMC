@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+        bungeecord:
+                image: thedyingday/bungee
+                ports:
+                        - 25577:25577
+                links:
+                        - mc
+        mc:
+                image: thedyingday/server
